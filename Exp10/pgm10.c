@@ -54,18 +54,17 @@ void main() {
                     }
                 }
                 if (j == rno) {
-                    for (int k = 0; k < rno; k++) {
+                    for (int k = 0; k < rno; k++) 
                         avail[k] += allo[i][k];
-                    }
+
                     safe[count++] = i;
                     flag[i] = 1;
                     found = 1;
                 }
             }
         }
-        if (found == 0) {
+        if (found == 0)
             break;  // No safe sequence found
-        }
     }
 
     if (count == pno) {
