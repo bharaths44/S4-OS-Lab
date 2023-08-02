@@ -89,6 +89,8 @@ int execute(int i) {
         time = p[i].bt;
         p[i].bt = 0;
         p[i].ct = time_units + time;
+
+        //Calculate TAT and WT
         p[i].tat = p[i].ct - p[i].at;
         p[i].wt = p[i].tat - p[i].bt_print;
         total_tat += p[i].tat;

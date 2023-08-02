@@ -56,6 +56,8 @@ void fcfs()
 			p[i+1].ct = p[i+1].bt;
 		else
 			p[i+1].ct	=	p[i].ct		+	p[i+1].bt;
+
+			
 		p[i].tat	=	p[i].ct		- 	p[i].at;
 		sum1		= 	sum1		+ 	p[i].tat;
 		p[i].wt		=	p[i].tat 	- 	p[i].bt;

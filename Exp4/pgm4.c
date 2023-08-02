@@ -102,8 +102,10 @@ void main()
 			p[loc].ct = pct + p[loc].bt;
 		else
 			p[loc].ct = p[loc].at + p[loc].bt;
-		p[loc].tat = p[loc].ct - p[loc].at;
-		p[loc].wt = p[loc].tat - p[loc].bt;
+
+		
+		p[loc].tat =  p[loc].ct  - p[loc].at;
+		p[loc].wt  =  p[loc].tat - p[loc].bt;
 		swap(loc, i);
 
 	}
