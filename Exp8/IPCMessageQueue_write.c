@@ -2,8 +2,8 @@
 #include<sys/msg.h>
 #include<stdio.h>
 #define MAX 100
-struct msg_buffer
 
+struct msg_buffer
 {
 	long msg_type;
 	char msg_text[100];
@@ -15,7 +15,7 @@ void main()
 	key_t key;
 	int msgid;
 
-	
+
 	key=ftok("progfile",65);
 	msgid=msgget(key,0666 | IPC_CREAT);
 

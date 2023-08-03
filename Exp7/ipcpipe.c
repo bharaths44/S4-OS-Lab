@@ -12,6 +12,8 @@ int main()
 	pid_t p;
 	pipe(fd);
 	p=fork();
+
+
 	if(p>0)
 	{
 		printf("Parent pass value to child \n");
@@ -19,6 +21,8 @@ int main()
 		fgets(as,100,stdin);
 		write(fd[1],as,100);
 	}
+
+	
 	read(fd[0],buffer,100);
 	printf("Child receive data ");
 	printf("\nBuffer :%s",buffer);
